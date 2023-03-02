@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "71795760922",
+    "firebase_url": "https://blindassistant-106c8-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "blindassistant-106c8",
+    "storage_bucket": "blindassistant-106c8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71795760922:android:d699ebc9ecb0e552c356a3",
+        "android_client_info": {
+          "package_name": "com.example.blindassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "71795760922-2eum1ndu1nfsohgm8nhqv9s8de3horr2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo3zxQhAyxh909E1xr-XYDNncXcuzw37s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "71795760922-2eum1ndu1nfsohgm8nhqv9s8de3horr2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71795760922:android:f0866ba0f1ef999bc356a3",
+        "android_client_info": {
+          "package_name": "com.example.blindassistant_blindapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "71795760922-2eum1ndu1nfsohgm8nhqv9s8de3horr2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo3zxQhAyxh909E1xr-XYDNncXcuzw37s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "71795760922-2eum1ndu1nfsohgm8nhqv9s8de3horr2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

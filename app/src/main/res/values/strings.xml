@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BlindAssistant-BlindApp</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_btn">Login</string>
+    <string name="empty_field_text">You must fill all the fields!</string>
+    <string name="failed_authentication_text">Authentication failed!</string>
+    <string name="menu_signout">Signout</string>
+    <string name="error_text">Error</string>
+    <string name="signing_out_tts">Signing out</string>
+    <string name="denied_permission_text">Permission denied!</string>
+    <string name="resetting_detected_faces_error">Resetting detected faces went wrong!</string>
+    <string name="sending_location_error">Sending location went wrong!</string>
+    <string name="getting_detected_faces_error">Getting detected faces went wrong!</string>
+</resources>
