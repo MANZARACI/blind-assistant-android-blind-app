@@ -62,6 +62,7 @@ public class EventListenerActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         mDatabase = FirebaseDatabase.getInstance().getReference();
+        currentUser = mAuth.getCurrentUser();
 
         queue = Volley.newRequestQueue(this);
 
@@ -126,6 +127,12 @@ public class EventListenerActivity extends AppCompatActivity {
 
             }
         };
+
+        mDetectedFacesRef = mDatabase.child("users").child(currentUser.getUid()).child("detectedFaces");
+        mDetectedFacesRef.addValueEventListener(detectedFacesListener);
+
+        mLocationRequestRef = mDatabase.child("users").child(currentUser.getUid()).child("locationRequest");
+        mLocationRequestRef.addValueEventListener(locationRequestListener);
     }
 
     private void sendLocation() {
@@ -242,20 +249,9 @@ public class EventListenerActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onStart() {
-        super.onStart();
-        currentUser = mAuth.getCurrentUser();
-        if (currentUser != null) {
-            if (mDetectedFacesRef == null) {
-                mDetectedFacesRef = mDatabase.child("users").child(currentUser.getUid()).child("detectedFaces");
-                mDetectedFacesRef.addValueEventListener(detectedFacesListener);
-            }
-
-            if (mLocationRequestRef == null) {
-                mLocationRequestRef = mDatabase.child("users").child(currentUser.getUid()).child("locationRequest");
-                mLocationRequestRef.addValueEventListener(locationRequestListener);
-            }
-
-        }
+    protected void onDestroy() {
+        super.onDestroy();
+        mDetectedFacesRef.removeEventListener(detectedFacesListener);
+        mLocationRequestRef.removeEventListener(locationRequestListener);
     }
 }
